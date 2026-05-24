@@ -1,0 +1,30 @@
+@media screen and (min-width: 2100px) {
+    .largurapadrao{
+        width: 55%;
+        font-size: 18px;
+    }    
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+    .largurapadrao{
+        width: 90%;
+    } 
+    *{
+        font-size: 16px;
+    }   
+    .diferencial{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    .largurapadrao{
+        width: 92%;
+    } 
+    *{
+        font-size: 12px;
+    }   
+    .diferencial{
+        font-size: 0.7rem;
+    }
+}
