@@ -1,5 +1,6 @@
 <?php
 	require_once './dados/funcoes.php';
+	require_once './dados/Dados.php';
 ?>
 
 <!DOCTYPE html>
@@ -207,13 +208,13 @@
 					<div id="Faixa">
 						<section class="CaixasProdutos">
 							<?php
-								Produtos('Celular.jpg');
+								Produtos($produtos,8,12);
 							?>
 						</section>
 						
 						<section class="CaixasProdutos">
 							<?php
-								Produtos('Celular2.jpg');
+								Produtos($produtos,12,16);
 							?>
 						</section>
 					</div>
@@ -283,19 +284,19 @@
 					<div id="FaixaApps">
 						<section class="apps">
 							<?php
-								apps('vivo-tv.webp');
+								apps($apps,0);
 							?>
 
 						</section>
 						
 						<section class="ofertas">
 							<?php
-								apps('vivo-sva-globoplay-bbb-2601-406x406.webp');
+								apps($apps,1);;
 							?>
 						</section>
 						<section class="ofertas">
 							<?php
-								apps('vivo-sva-premiere-brasileirao-2601-406x406.webp');
+								apps($apps,2);;
 							?>
 						</section>
 					</div>
@@ -319,14 +320,14 @@
 					<div id="FaixaEletronicos">
 						<section class="CaixasProdutos">
 							<?php
-								Produtos("televisão.jpg")
+								Produtos($produtos,0,4);
 							?>
 						</section>
 						
 						<section class="CaixasProdutos">
 							
 							<?php
-								Produtos("caixa de som.jpg")
+								Produtos($produtos,4,8);
 							?>
 								
 						</section>
@@ -356,20 +357,14 @@
 						</div>
 						
 						<button class="btnRecarga">Fazer recarga</button>
-						
-						
-						
-						<!-- Menu de Opções (Ícones)Ative a Fatura DigitalConsulta de saldoApp VivoAtive o débito automáticoPague a fatura com cartãoDevolução de equipamento
-						Conheça o Vivo ValorizaSeção Inferior (Portabilidade)
-						Portabilidade Vivo: saiba como manter seu númeroEntenda a portabilidade e aproveite pra escolher um de nossos planos com condições especiais.
-						Link/Botão: Trazer seu número -->
+
 					</section>
 					
 					<section id="AreaCaixasAuto">
 						<section class="Faixas">
 							<div class="Faixa">
 								<?php
-									Caixinhas(4,"vivo-smartphone-app-vivo-purpura-negativo-esquerda-320x320.svg","2ª via de Fatura");
+									Caixinhas(0,4,$autoatendimento);
 								?>
 								
 							</div>
@@ -377,7 +372,7 @@
 							<div class="Faixa">
 
 								<?php
-									Caixinhas(4,"vivo-smartphone-app-vivo-purpura-negativo-esquerda-320x320.svg","2ª via de Fatura");
+									Caixinhas(4,8,$autoatendimento);
 								?>
 								
 							</div>
@@ -413,13 +408,13 @@
 						<section class="Faixas">
 							<div class="Faixa">
 								<?php
-									Caixinhas(5,"vivo-devices-check-purpura-centro-320x320.svg","Fibra + Pós: Muito mais internet num único plano");
+									Caixinhas(0,5,$conexoes);
 								?>
 							</div>
 							
 							<div class="Faixa">
 								<?php
-									Caixinhas(5,"vivo-devices-check-purpura-centro-320x320.svg","Fibra + Pós: Muito mais internet num único plano");
+									Caixinhas(5,10,$conexoes);
 								?>
 								
 							</div>

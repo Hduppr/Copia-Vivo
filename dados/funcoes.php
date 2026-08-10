@@ -1,46 +1,48 @@
 <?php
-	function apps($imagem){
+    require_once './dados/Dados.php';
+
+	function apps($Array,$Num){
 		for ($i=0; $i < 4; $i++) { 
 			# code...
 			echo '<div class="caixaApps">
 					<section class="imgApps">
-						<img src="./images/'.$imagem.'" alt="">
+						<img src="./images/'.$Array[$Num]['imagem'].'" alt="">
 					</section>
 					<section class="infoApps">
 						
 						<div>
-							<h1 class="megas">Vivo TV</h1>   
-							<h2>TV 100% online, sem fidelidade, taxas ou instalação! Assista seus canais onde e como quiser.</h2>
+							<h1 class="megas">'.$Array[$Num]['nome'].'</h1>   
+							<h2>'.$Array[$Num]['descricao'].'</h2>
 						</div>
 						
-						<p class="preco"> R$ 100 /mês</p>
+						<p class="preco">'.$Array[$Num]['preço'].'</p>
 						
 						<div>
 							<p>Valor do plano inicial.</p>
-							<button class="btnAssinar">Assinar Vivo TV</button>
+							<button class="btnAssinar">Assinar '.$Array[$Num]['nome'].'</button>
 						</div>
 					</section>
 				</div>';
 		}
 	}
 
-	function Produtos($imagem){
-		for ($i=0; $i < 4; $i++) { 
+	function Produtos($Array,$qtdC,$QtdF){
+		for ($i=$qtdC; $i < $QtdF; $i++) { 
 			# code...
 			echo '<a href="#">
 					<div class="CardProduto">
 						<div class="ImagemProduto">
-							<img src="./images/'.$imagem.'" alt="">
+							<img src="./images/'.$Array[$i]['imagem'].'" alt="">
 						</div>
 						<div>
 							<div>
 								<span class="Frete">FRETE GRÁTIS</span>
-								<h1>Smartphone Samsung Galaxy S25 FE 5G 256GB Preto 8GB RAM Tela 6,7" Câm. Traseira 50+12+8MP Frontal 12MP</h1>
+								<h1>'.$Array[$i]['descricao'].'</h1>
 							</div>
 							
 							<div>
-								<p class="precoProduto">R$ 3.419,05 à vista</p>
-								<p class="parcelas">12x de R$ 299,92 sem juros</p>
+								<p class="precoProduto">R$ '.$Array[$i]['precoAvista'].' à vista</p>
+								<p class="parcelas">12x de R$ '.$Array[$i]['precoJuros'].' sem juros</p>
 							</div>
 							<button class="btnCompraragora">Comprar agora</button>
 						</div>
@@ -114,12 +116,12 @@
         </div>';
     }
 
-    function Caixinhas($Qtd,$imagem,$texto){
-        for ($i=0; $i < $Qtd; $i++) { 
+    function Caixinhas($QtdC,$QtdF,$Array){
+        for ($i=$QtdC; $i < $QtdF; $i++) { 
 
             echo '<a class="CaixaAuto">
-                    <img src="./images/'.$imagem.'" alt="">
-                    <h1>'.$texto.'"</h1></a>';
+                    <img src="./images/'.$Array[$i]['imagem'].'" alt="">
+                    <h1>'.$Array[$i]['titulo'].'</h1></a>';
         }
     }
 
