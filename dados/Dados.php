@@ -75,24 +75,26 @@ $produtos = [
 
     [
         'id' => 1,
-        'nome' => 'Samsung Galaxy S25 FE 5G',
-        'imagem' => 'Celular.jpg',
+        'nome' => 'iPhone 16e 256GB',
+        'imagem' => 'iphone16e.jpg',
         'categoria' => 'Celulares',
-        'descricao' => 'Smartphone Samsung Galaxy S25 FE 5G com tela de 6,7 polegadas, 256GB de armazenamento, 8GB de RAM e câmeras de alta qualidade para fotos e vídeos.',
-        'precoAvista' => 3419.05,
-        'precoJuros' => 299.92,
-        'link' => '#'
+        'tipo' => 'celular',
+        'descricao' => 'iPhone 16e com 256GB de armazenamento, excelente desempenho, câmera de alta qualidade e recursos avançados para o dia a dia.',
+        'precoAvista' => 3959.10,
+        'precoJuros' => 293.27,
+        'parcelas' => 15
     ],
 
     [
         'id' => 2,
-        'nome' => 'Vivo Smartphone 5G 256GB',
-        'imagem' => 'Celular2.jpg',
+        'nome' => 'Samsung Galaxy S26 256GB',
+        'imagem' => 'galaxys26.jpg',
         'categoria' => 'Celulares',
-        'descricao' => 'Smartphone moderno com conexão 5G, amplo armazenamento de 256GB, excelente desempenho para aplicativos, jogos, fotos e vídeos do dia a dia.',
-        'precoAvista' => 2899.90,
-        'precoJuros' => 249.99,
-        'link' => '#'
+        'tipo' => 'celular',
+        'descricao' => 'Samsung Galaxy S26 com 256GB de armazenamento, tela de alta qualidade, ótimo desempenho e câmeras avançadas.',
+        'precoAvista' => 5219.10,
+        'precoJuros' => 322.17,
+        'parcelas' => 18
     ],
 
     [
@@ -100,10 +102,11 @@ $produtos = [
         'nome' => 'Smart TV Philips 50" 4K',
         'imagem' => 'televisão.jpg',
         'categoria' => 'Eletrônicos',
+        'tipo' => 'televisao',
         'descricao' => 'Smart TV Philips de 50 polegadas com resolução 4K Ultra HD, tecnologia HDR, Dolby Audio e Bluetooth para uma experiência completa de entretenimento.',
         'precoAvista' => 2499.00,
         'precoJuros' => 219.90,
-        'link' => '#'
+        'parcelas' => 12
     ],
 
     [
@@ -111,32 +114,35 @@ $produtos = [
         'nome' => 'Caixa de Som Bluetooth Portátil',
         'imagem' => 'caixa de som.jpg',
         'categoria' => 'Eletrônicos',
+        'tipo' => 'caixa_som',
         'descricao' => 'Caixa de som portátil com conexão Bluetooth, bateria de longa duração e áudio potente para aproveitar suas músicas em casa ou em qualquer lugar.',
         'precoAvista' => 399.90,
         'precoJuros' => 39.99,
-        'link' => '#'
+        'parcelas' => 10
     ],
 
     [
         'id' => 5,
-        'nome' => 'Samsung Galaxy A56 5G',
-        'imagem' => 'Celular.jpg',
+        'nome' => 'iPhone 18 Pro 256GB',
+        'imagem' => 'Iphone 18.jpg',
         'categoria' => 'Celulares',
-        'descricao' => 'Celular Samsung Galaxy A56 5G com excelente desempenho, câmera avançada, tela de alta resolução e bastante espaço para seus aplicativos, fotos e arquivos.',
-        'precoAvista' => 2199.90,
-        'precoJuros' => 199.99,
-        'link' => '#'
+        'tipo' => 'celular',
+        'descricao' => 'iPhone 18 Pro com 256GB de armazenamento, alto desempenho, câmeras avançadas e recursos premium.',
+        'precoAvista' => 10799.10,
+        'precoJuros' => 666.61,
+        'parcelas' => 18
     ],
 
     [
         'id' => 6,
-        'nome' => 'Smartphone Vivo V50 5G',
-        'imagem' => 'Celular2.jpg',
+        'nome' => 'Samsung Galaxy A57 256GB',
+        'imagem' => 'GalaxyA57.jpg',
         'categoria' => 'Celulares',
-        'descricao' => 'Smartphone Vivo com tecnologia 5G, câmera de alta resolução, tela ampla e bateria de longa duração para acompanhar sua rotina com praticidade.',
-        'precoAvista' => 2399.90,
-        'precoJuros' => 209.99,
-        'link' => '#'
+        'tipo' => 'celular',
+        'descricao' => 'Samsung Galaxy A57 com 256GB de armazenamento, tela de alta resolução, bom desempenho e câmeras de qualidade.',
+        'precoAvista' => 2339.10,
+        'precoJuros' => 216.58,
+        'parcelas' => 12
     ],
 
     [
@@ -144,10 +150,11 @@ $produtos = [
         'nome' => 'Smart TV Philips 55" 4K',
         'imagem' => 'televisão.jpg',
         'categoria' => 'Eletrônicos',
+        'tipo' => 'televisao',
         'descricao' => 'Smart TV Philips de 55 polegadas com resolução 4K, imagens nítidas e sistema inteligente para acessar seus aplicativos favoritos de streaming.',
         'precoAvista' => 2999.90,
         'precoJuros' => 269.99,
-        'link' => '#'
+        'parcelas' => 12
     ],
 
     [
@@ -155,32 +162,35 @@ $produtos = [
         'nome' => 'Caixa de Som Bluetooth Pro',
         'imagem' => 'caixa de som.jpg',
         'categoria' => 'Eletrônicos',
+        'tipo' => 'caixa_som',
         'descricao' => 'Caixa de som Bluetooth com potência elevada, conexão sem fio e bateria de longa duração, ideal para festas, viagens e momentos de lazer.',
         'precoAvista' => 599.90,
         'precoJuros' => 59.99,
-        'link' => '#'
+        'parcelas' => 10
     ],
 
     [
         'id' => 9,
-        'nome' => 'Samsung Galaxy S24 5G',
+        'nome' => 'Samsung Galaxy S25 FE',
         'imagem' => 'Celular.jpg',
         'categoria' => 'Celulares',
+        'tipo' => 'celular',
         'descricao' => 'Smartphone Samsung Galaxy S24 5G com alto desempenho, tela de excelente qualidade, câmera avançada e armazenamento para todos os seus arquivos.',
         'precoAvista' => 3299.90,
         'precoJuros' => 289.99,
-        'link' => '#'
+        'parcelas' => 12
     ],
 
     [
         'id' => 10,
-        'nome' => 'Vivo Smartphone Y36 256GB',
+        'nome' => 'Iphone 16 256GB',
         'imagem' => 'Celular2.jpg',
         'categoria' => 'Celulares',
+        'tipo' => 'celular',
         'descricao' => 'Smartphone Vivo com 256GB de armazenamento, tela ampla, bateria de longa duração e desempenho ideal para redes sociais, vídeos e aplicativos.',
         'precoAvista' => 1599.90,
         'precoJuros' => 149.99,
-        'link' => '#'
+        'parcelas' => 12
     ],
 
     [
@@ -188,10 +198,11 @@ $produtos = [
         'nome' => 'Smart TV Philips 43" Full HD',
         'imagem' => 'televisão.jpg',
         'categoria' => 'Eletrônicos',
+        'tipo' => 'televisao',
         'descricao' => 'Smart TV Philips de 43 polegadas com excelente qualidade de imagem, sistema inteligente e acesso rápido aos principais aplicativos de entretenimento.',
         'precoAvista' => 1799.90,
         'precoJuros' => 159.99,
-        'link' => '#'
+        'parcelas' => 12
     ],
 
     [
@@ -199,32 +210,35 @@ $produtos = [
         'nome' => 'Caixa de Som Party Bluetooth',
         'imagem' => 'caixa de som.jpg',
         'categoria' => 'Eletrônicos',
+        'tipo' => 'caixa_som',
         'descricao' => 'Caixa de som portátil desenvolvida para quem gosta de música com bastante potência, conexão Bluetooth e bateria para várias horas de reprodução.',
         'precoAvista' => 799.90,
         'precoJuros' => 79.99,
-        'link' => '#'
+        'parcelas' => 10
     ],
 
     [
         'id' => 13,
         'nome' => 'Samsung Galaxy A36 5G',
-        'imagem' => 'Celular.jpg',
+        'imagem' => 'galaxyA36.jpg',
         'categoria' => 'Celulares',
+        'tipo' => 'celular',
         'descricao' => 'Smartphone Samsung Galaxy A36 5G com tela grande e brilhante, ótimo desempenho, câmera versátil e armazenamento suficiente para sua rotina.',
         'precoAvista' => 1899.90,
         'precoJuros' => 169.99,
-        'link' => '#'
+        'parcelas' => 12
     ],
 
     [
         'id' => 14,
         'nome' => 'Vivo Smartphone Y28 128GB',
-        'imagem' => 'Celular2.jpg',
+        'imagem' => 'vivoY28.jpg',
         'categoria' => 'Celulares',
+        'tipo' => 'celular',
         'descricao' => 'Smartphone Vivo com design moderno, 128GB de armazenamento, bateria de longa duração e desempenho equilibrado para as tarefas do dia a dia.',
         'precoAvista' => 1299.90,
         'precoJuros' => 119.99,
-        'link' => '#'
+        'parcelas' => 12
     ],
 
     [
@@ -232,10 +246,11 @@ $produtos = [
         'nome' => 'Smart TV Philips 65" 4K',
         'imagem' => 'televisão.jpg',
         'categoria' => 'Eletrônicos',
+        'tipo' => 'televisao',
         'descricao' => 'Smart TV Philips de 65 polegadas com resolução 4K Ultra HD, tela grande e sistema inteligente para transformar sua sala em um verdadeiro cinema.',
         'precoAvista' => 3899.90,
         'precoJuros' => 349.99,
-        'link' => '#'
+        'parcelas' => 12
     ],
 
     [
@@ -243,10 +258,11 @@ $produtos = [
         'nome' => 'Caixa de Som Bluetooth Premium',
         'imagem' => 'caixa de som.jpg',
         'categoria' => 'Eletrônicos',
+        'tipo' => 'caixa_som',
         'descricao' => 'Caixa de som Bluetooth premium com áudio potente, graves reforçados, conexão sem fio e bateria de longa duração para curtir suas músicas.',
         'precoAvista' => 999.90,
         'precoJuros' => 89.99,
-        'link' => '#'
+        'parcelas' => 12
     ]
 
 ];

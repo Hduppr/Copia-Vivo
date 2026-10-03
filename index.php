@@ -1,6 +1,7 @@
 <?php
 	require_once './dados/funcoes.php';
 	require_once './dados/Dados.php';
+	require_once 'autoload.php';
 ?>
 
 <!DOCTYPE html>
@@ -208,13 +209,15 @@
 					<div id="Faixa">
 						<section class="CaixasProdutos">
 							<?php
-								Produtos($produtos,8,12);
+								$View = new ProdutosView();
+								$View->MostrarMiniaturasCelulares(0,4);
 							?>
 						</section>
 						
 						<section class="CaixasProdutos">
 							<?php
-								Produtos($produtos,12,16);
+								$View = new ProdutosView();
+								$View->MostrarMiniaturasCelulares(4,4);
 							?>
 						</section>
 					</div>
@@ -320,14 +323,16 @@
 					<div id="FaixaEletronicos">
 						<section class="CaixasProdutos">
 							<?php
-								Produtos($produtos,0,4);
+								$View = new ProdutosView();
+								$View->MostrarMiniaturasEletronicos(8);
 							?>
 						</section>
 						
 						<section class="CaixasProdutos">
 							
 							<?php
-								Produtos($produtos,4,8);
+								$View = new ProdutosView();
+								$View->MostrarMiniaturasEletronicos(8);
 							?>
 								
 						</section>
